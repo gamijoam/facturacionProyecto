@@ -4,10 +4,10 @@ import sys
 from PySide6.QtWidgets import QApplication, QWidget
 
 # Important:
-# You need to run the following command to generate the ui_form.py file
-#     pyside6-uic form.ui -o ui_form.py, or
-#     pyside2-uic form.ui -o ui_form.py
-from ui_form import Ui_Widget
+# You need to run the following command to generate the ui_facturacion.py file
+#     pyside6-uic ui_facturacion.ui -o ui_facturacion.py, or
+#     pyside2-uic ui_facturacion.ui -o ui_facturacion.py
+from WINDOWS_PY.ui_facturacion import Ui_Widget
 
 class Widget(QWidget):
     def __init__(self, parent=None):
