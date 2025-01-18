@@ -16,11 +16,14 @@
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-10</x>
      <y>0</y>
-     <width>251</width>
+     <width>1191</width>
      <height>611</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/xy/ordenador-portatil.png);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Shape::StyledPanel</enum>
@@ -28,8 +31,235 @@
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>251</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#3790FA;</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>51</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/ordenador-portatil.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_15">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/carrito_de_compras.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/clasificacion.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/camion-de-reparto.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/clasificacion.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/agregar-usuario.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/mano.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/iconos_panel_control/informe.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="verticalFrame">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>161</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame QPushButton {
+	background-color: #3790FA; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Margen externo */
+    border: 2px solid black; /* Borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+QFrame QPushButton:hover {
+    background-color: #37A1FA; /* Cambia el color al pasar el mouse */
+}
+
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px;
+margin-botom:10px</string>
+        </property>
+        <property name="text">
+         <string>PRODUCTOS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>VENTAS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>CLIENTES</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>COMPRAS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>PROVEEDORES</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>EMPLEADOS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>PAGOS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="styleSheet">
+         <string notr="true">
+padding:5px</string>
+        </property>
+        <property name="text">
+         <string>REPORTES</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <zorder>verticalFrame</zorder>
+    <zorder>verticalLayoutWidget</zorder>
+   </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="iconos_panel_de_control/iconos.qrc"/>
+ </resources>
  <connections/>
 </ui>
