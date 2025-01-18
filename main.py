@@ -17,10 +17,17 @@ class Widget(QWidget):
         self.ui_login = Ui_Form()
         self.ui_login.setupUi(self)
 
+
         #self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
         #self.ui_login.pushButton_2.clicked.connect(self.close)
 
         self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
+
+        #self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
+        #self.ui_login.pushButton_2.clicked.connect(self.close)
+        self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
+
+
 
     def cerrar_ventana(self):
         self.close()

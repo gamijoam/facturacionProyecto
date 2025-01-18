@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="iconos_panel_control">
+    <file>agregar-usuario.png</file>
+    <file>camion-de-reparto.png</file>
+    <file>carrito_de_compras.png</file>
+    <file>clasificacion.png</file>
+    <file>informe.png</file>
+    <file>mano.png</file>
+    <file>ordenador-portatil.png</file>
+  </qresource>
+</RCC>
