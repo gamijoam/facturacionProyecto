@@ -6,147 +6,199 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1313</width>
-    <height>646</height>
+    <width>1112</width>
+    <height>596</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Panel de control</string>
   </property>
-  <widget class="QFrame" name="frame">
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="pushButton_11">
    <property name="geometry">
     <rect>
-     <x>-10</x>
-     <y>0</y>
-     <width>1191</width>
-     <height>611</height>
+     <x>280</x>
+     <y>40</y>
+     <width>141</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">image: url(:/xy/ordenador-portatil.png);</string>
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
+</string>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::Shape::StyledPanel</enum>
+   <property name="text">
+    <string/>
    </property>
-   <property name="frameShadow">
-    <enum>QFrame::Shadow::Raised</enum>
+   <property name="icon">
+    <iconset resource="iconos_panel_de_control/iconos.qrc">
+     <normaloff>:/iconos_panel_control/clasificacion.png</normaloff>:/iconos_panel_control/clasificacion.png</iconset>
    </property>
-   <widget class="QWidget" name="widget" native="true">
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid #343A40;
+background:#343A40;
+border-radius:4.5px;
+color:#fff</string>
+   </property>
+   <property name="text">
+    <string>CLIENTES</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>251</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#007BFF;
+border:1px solid black;
+border-radius:5px;</string>
+   </property>
+   <widget class="QWidget" name="verticalWidget_2" native="true">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>10</y>
-      <width>251</width>
-      <height>571</height>
+      <y>70</y>
+      <width>61</width>
+      <height>441</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background:#3790FA;</string>
+     <string notr="true">border:none;
+</string>
     </property>
-    <widget class="QWidget" name="verticalLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>51</width>
-       <height>431</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QLabel" name="label_16">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/ordenador-portatil.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_15">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/carrito_de_compras.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_14">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/clasificacion.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_13">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/camion-de-reparto.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_12">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/clasificacion.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_11">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/agregar-usuario.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_10">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/mano.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_9">
-        <property name="styleSheet">
-         <string notr="true">border-image: url(:/iconos_panel_control/informe.png);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QFrame" name="verticalFrame">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>60</y>
-       <width>161</width>
-       <height>461</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame QPushButton {
-	background-color: #3790FA; /* Color de fondo */
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/ordenador-portatil.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_18">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/carrito_de_compras.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_19">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/clasificacion.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_20">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/camion-de-reparto.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_21">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/clasificacion.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_22">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/agregar-usuario.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_23">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/mano.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_24">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/iconos_panel_control/informe.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>161</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+	border:none;
+}
+QFrame QPushButton {
+	background-color: #007BFF; /* Color de fondo */
     color: black; /* Color del texto */
     font-size: 16px; /* Tamaño de la fuente */
     padding: 10px; /* Espaciado interno */
@@ -160,102 +212,328 @@ QFrame QPushButton:hover {
 }
 
 </string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="styleSheet">
-         <string notr="true">
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px;
 margin-botom:10px</string>
-        </property>
-        <property name="text">
-         <string>PRODUCTOS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>PRODUCTOS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>VENTAS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>VENTAS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>CLIENTES</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>CLIENTES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>COMPRAS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>COMPRAS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>PROVEEDORES</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_7">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>PROVEEDORES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>EMPLEADOS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_6">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>EMPLEADOS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>PAGOS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_8">
-        <property name="styleSheet">
-         <string notr="true">
+       </property>
+       <property name="text">
+        <string>PAGOS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="styleSheet">
+        <string notr="true">
 padding:5px</string>
-        </property>
-        <property name="text">
-         <string>REPORTES</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <zorder>verticalFrame</zorder>
-    <zorder>verticalLayoutWidget</zorder>
+       </property>
+       <property name="text">
+        <string>REPORTES</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_20">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>40</y>
+     <width>141</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1.5px solid #343A40;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="iconos_panel_de_control/iconos.qrc">
+     <normaloff>:/iconos_panel_control/carrito_de_compras.png</normaloff>:/iconos_panel_control/carrito_de_compras.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid #343A40;
+background:#343A40;
+border-radius:4.5px;
+color:#fff</string>
+   </property>
+   <property name="text">
+    <string>VENTAS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_18">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>40</y>
+     <width>141</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="iconos_panel_de_control/iconos.qrc">
+     <normaloff>:/iconos_panel_control/caja-registradora.png</normaloff>:/iconos_panel_control/caja-registradora.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid #343A40;
+background:#343A40;
+border-radius:4.5px;
+color:#fff</string>
+   </property>
+   <property name="text">
+    <string>CAJA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_19">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>40</y>
+     <width>141</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="iconos_panel_de_control/iconos.qrc">
+     <normaloff>:/iconos_panel_control/productos-de-limpieza.png</normaloff>:/iconos_panel_control/productos-de-limpieza.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid #343A40;
+background:#343A40;
+border-radius:4.5px;
+color:#fff</string>
+   </property>
+   <property name="text">
+    <string>PRODUCTOS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_21">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>40</y>
+     <width>141</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="iconos_panel_de_control/iconos.qrc">
+     <normaloff>:/iconos_panel_control/grafico-de-acciones.png</normaloff>:/iconos_panel_control/grafico-de-acciones.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid #343A40;
+background:#343A40;
+border-radius:4.5px;
+color:#fff</string>
+   </property>
+   <property name="text">
+    <string>COTIZACIONES</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
   </widget>
  </widget>
  <resources>

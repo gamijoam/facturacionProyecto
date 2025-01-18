@@ -36,6 +36,7 @@ class Widget(QWidget):
         self.ventana_panel_de_control = QtWidgets.QMainWindow()
         self.ui_ventana_panel_de_control = Ui_panel_de_control()
         self.ui_ventana_panel_de_control.setupUi(self.ventana_panel_de_control)
+        self.ui_ventana_panel_de_control.pushButton_11.clicked.connect(self.facturacion)
         self.ventana_panel_de_control.show()
 
 
