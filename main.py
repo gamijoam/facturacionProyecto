@@ -9,6 +9,7 @@ from PySide6.QtWidgets import QApplication, QWidget
 #     pyside2-uic ui_facturacion.ui -o ui_facturacion.py
 from WINDOWS_PY.ui_facturacion import Ui_Widget
 from WINDOWS_PY.ui_login import Ui_Form
+from WINDOWS_PY.ui_panelDeControl import Ui_panel_de_control
 
 class Widget(QWidget):
     def __init__(self, parent=None):
@@ -19,7 +20,16 @@ class Widget(QWidget):
 
     def cerrar_ventana(self):
         self.close()
-        self.facturacion()
+        #self.facturacion()
+        self.panel_de_control()
+
+    def panel_de_control(self):
+        self.ventana_panel_de_control = QtWidgets.QMainWindow()
+        self.ui_ventana_panel_de_control = Ui_panel_de_control()
+        self.ui_ventana_panel_de_control.setupUi(self.ventana_panel_de_control)
+        self.ventana_panel_de_control.show()
+
+
 
     def facturacion(self):
         self.ventana_facturacion = QtWidgets.QMainWindow()
