@@ -15,7 +15,11 @@ class Widget(QWidget):
         super().__init__(parent)
         self.ui_login = Ui_Form()
         self.ui_login.setupUi(self)
+        self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
 
+    def cerrar_ventana(self):
+        self.close()
+        self.facturacion()
 
     def facturacion(self):
         self.ventana_facturacion = QtWidgets.QMainWindow()
