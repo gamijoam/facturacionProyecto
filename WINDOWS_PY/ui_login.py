@@ -22,38 +22,47 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(406, 377)
+        Form.resize(360, 370)
         Form.setStyleSheet(u"")
-        self.label = QLabel(Form)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(40, 110, 101, 31))
-        self.label.setStyleSheet(u"font: 13pt \"Segoe UI\";")
-        self.label_2 = QLabel(Form)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(30, 170, 101, 31))
-        self.label_2.setStyleSheet(u"font: 13pt \"Segoe UI\";")
-        self.lineEdit_2 = QLineEdit(Form)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-        self.lineEdit_2.setGeometry(QRect(142, 170, 191, 31))
         self.lineEdit_3 = QLineEdit(Form)
         self.lineEdit_3.setObjectName(u"lineEdit_3")
-        self.lineEdit_3.setGeometry(QRect(140, 110, 191, 31))
+        self.lineEdit_3.setEnabled(True)
+        self.lineEdit_3.setGeometry(QRect(39, 130, 281, 41))
+        self.lineEdit_3.setStyleSheet(u"\n"
+"    border: 2px solid black;       /* Borde negro de 2px de grosor */\n"
+"    border-radius: 10px;           /* Bordes redondeados */\n"
+"    padding: 5px;                  /* Espacio interno */\n"
+"    background-color: white;       /* Color de fondo */\n"
+"")
         self.label_3 = QLabel(Form)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(160, 60, 171, 20))
-        self.label_3.setStyleSheet(u"font: 15pt \"Segoe UI\";")
+        self.label_3.setGeometry(QRect(120, 50, 261, 41))
+        font = QFont()
+        font.setFamilies([u"Segoe UI"])
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet(u"font: 25pt \"Segoe UI\";")
         self.pushButton = QPushButton(Form)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(50, 230, 131, 51))
+        self.pushButton.setGeometry(QRect(110, 270, 131, 51))
         self.pushButton.setStyleSheet(u"background-color: #E5E3E4;\n"
 "font: 700 12pt \"Segoe UI\";\n"
-"font: 700 italic 12pt \"Segoe UI\";")
-        self.pushButton_2 = QPushButton(Form)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(200, 230, 131, 51))
-        self.pushButton_2.setStyleSheet(u"background-color: #E5E3E4;\n"
-"font: 700 12pt \"Segoe UI\";\n"
-"font: 700 italic 12pt \"Segoe UI\";")
+"font: 700 italic 12pt \"Segoe UI\";\n"
+" border: 2px solid black;       /* Borde negro de 2px de grosor */\n"
+"    border-radius: 10px;           /* Bordes redondeados */\n"
+"    padding: 5px")
+        self.lineEdit_4 = QLineEdit(Form)
+        self.lineEdit_4.setObjectName(u"lineEdit_4")
+        self.lineEdit_4.setEnabled(True)
+        self.lineEdit_4.setGeometry(QRect(40, 200, 281, 41))
+        self.lineEdit_4.setStyleSheet(u"\n"
+"    border: 2px solid black;       /* Borde negro de 2px de grosor */\n"
+"    border-radius: 10px;           /* Bordes redondeados */\n"
+"    padding: 5px;                  /* Espacio interno */\n"
+"    background-color: white;       /* Color de fondo */\n"
+"")
 
         self.retranslateUi(Form)
 
@@ -61,11 +70,10 @@ class Ui_Form(object):
     # setupUi
 
     def retranslateUi(self, Form):
-        Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.label.setText(QCoreApplication.translate("Form", u"Usuario", None))
-        self.label_2.setText(QCoreApplication.translate("Form", u"Contrase\u00f1a", None))
-        self.label_3.setText(QCoreApplication.translate("Form", u"Inicio de sesion", None))
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"Login", None))
+        self.lineEdit_3.setPlaceholderText(QCoreApplication.translate("Form", u"Usuario", None))
+        self.label_3.setText(QCoreApplication.translate("Form", u"LOGIN", None))
         self.pushButton.setText(QCoreApplication.translate("Form", u"INGRESAR", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"CANCELAR", None))
+        self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("Form", u"Contrase\u00f1a", None))
     # retranslateUi
 
