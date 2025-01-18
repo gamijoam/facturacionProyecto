@@ -26,6 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -36,6 +37,13 @@ border-bottom-right-radius: 10px;
 QPushButton:hover{
 	background:#D5DBDB;
 }</string>
+=======
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
+</string>
+>>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -321,6 +329,7 @@ padding:5px</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -331,6 +340,13 @@ border-bottom-right-radius: 10px;
 QPushButton:hover{
 	background:#D5DBDB;
 }</string>
+=======
+    <string notr="true">border:1.5px solid #343A40;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
+
+</string>
+>>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -384,6 +400,7 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -394,6 +411,12 @@ border-bottom-right-radius: 10px;
 QPushButton:hover{
 	background:#D5DBDB;
 }</string>
+=======
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
+>>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -447,6 +470,7 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -457,6 +481,12 @@ border-bottom-right-radius: 10px;
 QPushButton:hover{
 	background:#D5DBDB;
 }</string>
+=======
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
+>>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -510,6 +540,7 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -520,6 +551,12 @@ border-bottom-right-radius: 10px;
 QPushButton:hover{
 	background:#D5DBDB;
 }</string>
+=======
+    <string notr="true">border:1.5px solid #343A40;
+border-radius:3px;
+border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
+border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
+>>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
