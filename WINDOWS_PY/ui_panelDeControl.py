@@ -23,76 +23,101 @@ class Ui_panel_de_control(object):
     def setupUi(self, panel_de_control):
         if not panel_de_control.objectName():
             panel_de_control.setObjectName(u"panel_de_control")
-        panel_de_control.resize(1313, 646)
-        self.frame = QFrame(panel_de_control)
-        self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(-10, 0, 1191, 611))
-        self.frame.setStyleSheet(u"image: url(:/xy/ordenador-portatil.png);")
-        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Shadow.Raised)
-        self.widget = QWidget(self.frame)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(20, 10, 251, 571))
-        self.widget.setStyleSheet(u"background:#3790FA;")
-        self.verticalLayoutWidget = QWidget(self.widget)
-        self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(20, 70, 51, 431))
-        self.verticalLayout_2 = QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.label_16 = QLabel(self.verticalLayoutWidget)
-        self.label_16.setObjectName(u"label_16")
-        self.label_16.setStyleSheet(u"border-image: url(:/iconos_panel_control/ordenador-portatil.png);")
+        panel_de_control.resize(1112, 596)
+        panel_de_control.setStyleSheet(u"")
+        self.pushButton_11 = QPushButton(panel_de_control)
+        self.pushButton_11.setObjectName(u"pushButton_11")
+        self.pushButton_11.setGeometry(QRect(280, 40, 141, 131))
+        self.pushButton_11.setStyleSheet(u"border:1.5px solid #343A40;\n"
+"border-radius:3px;\n"
+"border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
+"border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */\n"
+"")
+        icon = QIcon()
+        icon.addFile(u":/iconos_panel_control/clasificacion.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton_11.setIcon(icon)
+        self.pushButton_11.setIconSize(QSize(60, 60))
+        self.label_2 = QLabel(panel_de_control)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(280, 10, 141, 41))
+        font = QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet(u"border:2px solid #343A40;\n"
+"background:#343A40;\n"
+"border-radius:4.5px;\n"
+"color:#fff")
+        self.label_2.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.widget_2 = QWidget(panel_de_control)
+        self.widget_2.setObjectName(u"widget_2")
+        self.widget_2.setGeometry(QRect(10, 10, 251, 571))
+        self.widget_2.setStyleSheet(u"background:#007BFF;\n"
+"border:1px solid black;\n"
+"border-radius:5px;")
+        self.verticalWidget_2 = QWidget(self.widget_2)
+        self.verticalWidget_2.setObjectName(u"verticalWidget_2")
+        self.verticalWidget_2.setGeometry(QRect(20, 70, 61, 441))
+        self.verticalWidget_2.setStyleSheet(u"border:none;\n"
+"")
+        self.verticalLayout_3 = QVBoxLayout(self.verticalWidget_2)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.label_17 = QLabel(self.verticalWidget_2)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setStyleSheet(u"border-image: url(:/iconos_panel_control/ordenador-portatil.png);")
 
-        self.verticalLayout_2.addWidget(self.label_16)
+        self.verticalLayout_3.addWidget(self.label_17)
 
-        self.label_15 = QLabel(self.verticalLayoutWidget)
-        self.label_15.setObjectName(u"label_15")
-        self.label_15.setStyleSheet(u"border-image: url(:/iconos_panel_control/carrito_de_compras.png);")
+        self.label_18 = QLabel(self.verticalWidget_2)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setStyleSheet(u"border-image: url(:/iconos_panel_control/carrito_de_compras.png);")
 
-        self.verticalLayout_2.addWidget(self.label_15)
+        self.verticalLayout_3.addWidget(self.label_18)
 
-        self.label_14 = QLabel(self.verticalLayoutWidget)
-        self.label_14.setObjectName(u"label_14")
-        self.label_14.setStyleSheet(u"border-image: url(:/iconos_panel_control/clasificacion.png);")
+        self.label_19 = QLabel(self.verticalWidget_2)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setStyleSheet(u"border-image: url(:/iconos_panel_control/clasificacion.png);")
 
-        self.verticalLayout_2.addWidget(self.label_14)
+        self.verticalLayout_3.addWidget(self.label_19)
 
-        self.label_13 = QLabel(self.verticalLayoutWidget)
-        self.label_13.setObjectName(u"label_13")
-        self.label_13.setStyleSheet(u"border-image: url(:/iconos_panel_control/camion-de-reparto.png);")
+        self.label_20 = QLabel(self.verticalWidget_2)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setStyleSheet(u"border-image: url(:/iconos_panel_control/camion-de-reparto.png);")
 
-        self.verticalLayout_2.addWidget(self.label_13)
+        self.verticalLayout_3.addWidget(self.label_20)
 
-        self.label_12 = QLabel(self.verticalLayoutWidget)
-        self.label_12.setObjectName(u"label_12")
-        self.label_12.setStyleSheet(u"border-image: url(:/iconos_panel_control/clasificacion.png);")
+        self.label_21 = QLabel(self.verticalWidget_2)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setStyleSheet(u"border-image: url(:/iconos_panel_control/clasificacion.png);")
 
-        self.verticalLayout_2.addWidget(self.label_12)
+        self.verticalLayout_3.addWidget(self.label_21)
 
-        self.label_11 = QLabel(self.verticalLayoutWidget)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setStyleSheet(u"border-image: url(:/iconos_panel_control/agregar-usuario.png);")
+        self.label_22 = QLabel(self.verticalWidget_2)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setStyleSheet(u"border-image: url(:/iconos_panel_control/agregar-usuario.png);")
 
-        self.verticalLayout_2.addWidget(self.label_11)
+        self.verticalLayout_3.addWidget(self.label_22)
 
-        self.label_10 = QLabel(self.verticalLayoutWidget)
-        self.label_10.setObjectName(u"label_10")
-        self.label_10.setStyleSheet(u"border-image: url(:/iconos_panel_control/mano.png);")
+        self.label_23 = QLabel(self.verticalWidget_2)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setStyleSheet(u"border-image: url(:/iconos_panel_control/mano.png);")
 
-        self.verticalLayout_2.addWidget(self.label_10)
+        self.verticalLayout_3.addWidget(self.label_23)
 
-        self.label_9 = QLabel(self.verticalLayoutWidget)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setStyleSheet(u"border-image: url(:/iconos_panel_control/informe.png);")
+        self.label_24 = QLabel(self.verticalWidget_2)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setStyleSheet(u"border-image: url(:/iconos_panel_control/informe.png);")
 
-        self.verticalLayout_2.addWidget(self.label_9)
+        self.verticalLayout_3.addWidget(self.label_24)
 
-        self.verticalFrame = QFrame(self.widget)
-        self.verticalFrame.setObjectName(u"verticalFrame")
-        self.verticalFrame.setGeometry(QRect(70, 60, 161, 461))
-        self.verticalFrame.setStyleSheet(u"QFrame QPushButton {\n"
-"	background-color: #3790FA; /* Color de fondo */\n"
+        self.verticalFrame_2 = QFrame(self.widget_2)
+        self.verticalFrame_2.setObjectName(u"verticalFrame_2")
+        self.verticalFrame_2.setGeometry(QRect(80, 60, 161, 461))
+        self.verticalFrame_2.setStyleSheet(u"QFrame{\n"
+"	border:none;\n"
+"}\n"
+"QFrame QPushButton {\n"
+"	background-color: #007BFF; /* Color de fondo */\n"
 "    color: black; /* Color del texto */\n"
 "    font-size: 16px; /* Tama\u00f1o de la fuente */\n"
 "    padding: 10px; /* Espaciado interno */\n"
@@ -106,67 +131,146 @@ class Ui_panel_de_control(object):
 "}\n"
 "\n"
 "")
-        self.verticalLayout = QVBoxLayout(self.verticalFrame)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.pushButton = QPushButton(self.verticalFrame)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setStyleSheet(u"\n"
+        self.verticalLayout_4 = QVBoxLayout(self.verticalFrame_2)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.pushButton_9 = QPushButton(self.verticalFrame_2)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        self.pushButton_9.setStyleSheet(u"\n"
 "padding:5px;\n"
 "margin-botom:10px")
 
-        self.verticalLayout.addWidget(self.pushButton)
+        self.verticalLayout_4.addWidget(self.pushButton_9)
 
-        self.pushButton_2 = QPushButton(self.verticalFrame)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setStyleSheet(u"\n"
+        self.pushButton_10 = QPushButton(self.verticalFrame_2)
+        self.pushButton_10.setObjectName(u"pushButton_10")
+        self.pushButton_10.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_2)
+        self.verticalLayout_4.addWidget(self.pushButton_10)
 
-        self.pushButton_3 = QPushButton(self.verticalFrame)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setStyleSheet(u"\n"
+        self.pushButton_12 = QPushButton(self.verticalFrame_2)
+        self.pushButton_12.setObjectName(u"pushButton_12")
+        self.pushButton_12.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_3)
+        self.verticalLayout_4.addWidget(self.pushButton_12)
 
-        self.pushButton_4 = QPushButton(self.verticalFrame)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setStyleSheet(u"\n"
+        self.pushButton_13 = QPushButton(self.verticalFrame_2)
+        self.pushButton_13.setObjectName(u"pushButton_13")
+        self.pushButton_13.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_4)
+        self.verticalLayout_4.addWidget(self.pushButton_13)
 
-        self.pushButton_5 = QPushButton(self.verticalFrame)
-        self.pushButton_5.setObjectName(u"pushButton_5")
-        self.pushButton_5.setStyleSheet(u"\n"
+        self.pushButton_14 = QPushButton(self.verticalFrame_2)
+        self.pushButton_14.setObjectName(u"pushButton_14")
+        self.pushButton_14.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_5)
+        self.verticalLayout_4.addWidget(self.pushButton_14)
 
-        self.pushButton_7 = QPushButton(self.verticalFrame)
-        self.pushButton_7.setObjectName(u"pushButton_7")
-        self.pushButton_7.setStyleSheet(u"\n"
+        self.pushButton_15 = QPushButton(self.verticalFrame_2)
+        self.pushButton_15.setObjectName(u"pushButton_15")
+        self.pushButton_15.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_7)
+        self.verticalLayout_4.addWidget(self.pushButton_15)
 
-        self.pushButton_6 = QPushButton(self.verticalFrame)
-        self.pushButton_6.setObjectName(u"pushButton_6")
-        self.pushButton_6.setStyleSheet(u"\n"
+        self.pushButton_16 = QPushButton(self.verticalFrame_2)
+        self.pushButton_16.setObjectName(u"pushButton_16")
+        self.pushButton_16.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_6)
+        self.verticalLayout_4.addWidget(self.pushButton_16)
 
-        self.pushButton_8 = QPushButton(self.verticalFrame)
-        self.pushButton_8.setObjectName(u"pushButton_8")
-        self.pushButton_8.setStyleSheet(u"\n"
+        self.pushButton_17 = QPushButton(self.verticalFrame_2)
+        self.pushButton_17.setObjectName(u"pushButton_17")
+        self.pushButton_17.setStyleSheet(u"\n"
 "padding:5px")
 
-        self.verticalLayout.addWidget(self.pushButton_8)
+        self.verticalLayout_4.addWidget(self.pushButton_17)
 
-        self.verticalFrame.raise_()
-        self.verticalLayoutWidget.raise_()
+        self.pushButton_20 = QPushButton(panel_de_control)
+        self.pushButton_20.setObjectName(u"pushButton_20")
+        self.pushButton_20.setGeometry(QRect(440, 40, 141, 131))
+        self.pushButton_20.setStyleSheet(u"border:1.5px solid #343A40;\n"
+"border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
+"border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */\n"
+"\n"
+"")
+        icon1 = QIcon()
+        icon1.addFile(u":/iconos_panel_control/carrito_de_compras.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton_20.setIcon(icon1)
+        self.pushButton_20.setIconSize(QSize(60, 60))
+        self.label_5 = QLabel(panel_de_control)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(440, 10, 141, 41))
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet(u"border:2px solid #343A40;\n"
+"background:#343A40;\n"
+"border-radius:4.5px;\n"
+"color:#fff")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.pushButton_18 = QPushButton(panel_de_control)
+        self.pushButton_18.setObjectName(u"pushButton_18")
+        self.pushButton_18.setGeometry(QRect(600, 40, 141, 131))
+        self.pushButton_18.setStyleSheet(u"border:1.5px solid #343A40;\n"
+"border-radius:3px;\n"
+"border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
+"border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */")
+        icon2 = QIcon()
+        icon2.addFile(u":/iconos_panel_control/caja-registradora.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton_18.setIcon(icon2)
+        self.pushButton_18.setIconSize(QSize(60, 60))
+        self.label_3 = QLabel(panel_de_control)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(600, 10, 141, 41))
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet(u"border:2px solid #343A40;\n"
+"background:#343A40;\n"
+"border-radius:4.5px;\n"
+"color:#fff")
+        self.label_3.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.pushButton_19 = QPushButton(panel_de_control)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setGeometry(QRect(760, 40, 141, 131))
+        self.pushButton_19.setStyleSheet(u"border:1.5px solid #343A40;\n"
+"border-radius:3px;\n"
+"border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
+"border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */")
+        icon3 = QIcon()
+        icon3.addFile(u":/iconos_panel_control/productos-de-limpieza.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton_19.setIcon(icon3)
+        self.pushButton_19.setIconSize(QSize(60, 60))
+        self.label_4 = QLabel(panel_de_control)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(760, 10, 141, 41))
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet(u"border:2px solid #343A40;\n"
+"background:#343A40;\n"
+"border-radius:4.5px;\n"
+"color:#fff")
+        self.label_4.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.pushButton_21 = QPushButton(panel_de_control)
+        self.pushButton_21.setObjectName(u"pushButton_21")
+        self.pushButton_21.setGeometry(QRect(920, 40, 141, 131))
+        self.pushButton_21.setStyleSheet(u"border:1.5px solid #343A40;\n"
+"border-radius:3px;\n"
+"border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
+"border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */")
+        icon4 = QIcon()
+        icon4.addFile(u":/iconos_panel_control/grafico-de-acciones.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton_21.setIcon(icon4)
+        self.pushButton_21.setIconSize(QSize(60, 60))
+        self.label_6 = QLabel(panel_de_control)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(920, 10, 141, 41))
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet(u"border:2px solid #343A40;\n"
+"background:#343A40;\n"
+"border-radius:4.5px;\n"
+"color:#fff")
+        self.label_6.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.retranslateUi(panel_de_control)
 
@@ -175,21 +279,31 @@ class Ui_panel_de_control(object):
 
     def retranslateUi(self, panel_de_control):
         panel_de_control.setWindowTitle(QCoreApplication.translate("panel_de_control", u"Panel de control", None))
-        self.label_16.setText("")
-        self.label_15.setText("")
-        self.label_14.setText("")
-        self.label_13.setText("")
-        self.label_12.setText("")
-        self.label_11.setText("")
-        self.label_10.setText("")
-        self.label_9.setText("")
-        self.pushButton.setText(QCoreApplication.translate("panel_de_control", u"PRODUCTOS", None))
-        self.pushButton_2.setText(QCoreApplication.translate("panel_de_control", u"VENTAS", None))
-        self.pushButton_3.setText(QCoreApplication.translate("panel_de_control", u"CLIENTES", None))
-        self.pushButton_4.setText(QCoreApplication.translate("panel_de_control", u"COMPRAS", None))
-        self.pushButton_5.setText(QCoreApplication.translate("panel_de_control", u"PROVEEDORES", None))
-        self.pushButton_7.setText(QCoreApplication.translate("panel_de_control", u"EMPLEADOS", None))
-        self.pushButton_6.setText(QCoreApplication.translate("panel_de_control", u"PAGOS", None))
-        self.pushButton_8.setText(QCoreApplication.translate("panel_de_control", u"REPORTES", None))
+        self.pushButton_11.setText("")
+        self.label_2.setText(QCoreApplication.translate("panel_de_control", u"CLIENTES", None))
+        self.label_17.setText("")
+        self.label_18.setText("")
+        self.label_19.setText("")
+        self.label_20.setText("")
+        self.label_21.setText("")
+        self.label_22.setText("")
+        self.label_23.setText("")
+        self.label_24.setText("")
+        self.pushButton_9.setText(QCoreApplication.translate("panel_de_control", u"PRODUCTOS", None))
+        self.pushButton_10.setText(QCoreApplication.translate("panel_de_control", u"VENTAS", None))
+        self.pushButton_12.setText(QCoreApplication.translate("panel_de_control", u"CLIENTES", None))
+        self.pushButton_13.setText(QCoreApplication.translate("panel_de_control", u"COMPRAS", None))
+        self.pushButton_14.setText(QCoreApplication.translate("panel_de_control", u"PROVEEDORES", None))
+        self.pushButton_15.setText(QCoreApplication.translate("panel_de_control", u"EMPLEADOS", None))
+        self.pushButton_16.setText(QCoreApplication.translate("panel_de_control", u"PAGOS", None))
+        self.pushButton_17.setText(QCoreApplication.translate("panel_de_control", u"REPORTES", None))
+        self.pushButton_20.setText("")
+        self.label_5.setText(QCoreApplication.translate("panel_de_control", u"VENTAS", None))
+        self.pushButton_18.setText("")
+        self.label_3.setText(QCoreApplication.translate("panel_de_control", u"CAJA", None))
+        self.pushButton_19.setText("")
+        self.label_4.setText(QCoreApplication.translate("panel_de_control", u"PRODUCTOS", None))
+        self.pushButton_21.setText("")
+        self.label_6.setText(QCoreApplication.translate("panel_de_control", u"COTIZACIONES", None))
     # retranslateUi
 
