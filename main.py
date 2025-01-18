@@ -16,12 +16,10 @@ class Widget(QWidget):
         super().__init__(parent)
         self.ui_login = Ui_Form()
         self.ui_login.setupUi(self)
-<<<<<<< HEAD
         #self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
         #self.ui_login.pushButton_2.clicked.connect(self.close)
-=======
         self.ui_login.pushButton.clicked.connect(self.cerrar_ventana)
->>>>>>> test
+
 
     def cerrar_ventana(self):
         self.close()
