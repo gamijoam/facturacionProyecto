@@ -26,27 +26,11 @@
     </rect>
    </property>
    <property name="styleSheet">
-<<<<<<< HEAD
-=======
-
->>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
-    <string notr="true">QPushButton{
-border:1.5px solid #343A40;
-border-radius:3px;
-border-bottom-left-radius: 10px; 
-border-bottom-right-radius: 10px;
-}
-
-QPushButton:hover{
-	background:#D5DBDB;
-}</string>
-=======
-    <string notr="true">border:1.5px solid #343A40;
+    <string notr="true">border:3px solid #B2F2BB;
 border-radius:3px;
 border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
 border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
 </string>
->>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -78,10 +62,13 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:2px solid #343A40;
-background:#343A40;
+    <string notr="true">border:1.7px solid black;
+background:#B2F2BB;
 border-radius:4.5px;
-color:#fff</string>
+border-left:none;
+border-right:none;
+border-top:none;
+</string>
    </property>
    <property name="text">
     <string>CLIENTES</string>
@@ -100,7 +87,7 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background:#007BFF;
+    <string notr="true">background:#87CEEB;
 border:1px solid black;
 border-radius:5px;</string>
    </property>
@@ -204,9 +191,9 @@ border-radius:5px;</string>
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>60</y>
+      <y>70</y>
       <width>161</width>
-      <height>461</height>
+      <height>451</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -214,12 +201,12 @@ border-radius:5px;</string>
 	border:none;
 }
 QFrame QPushButton {
-	background-color: #007BFF; /* Color de fondo */
+	background-color: #87CEEB; /* Color de fondo */
     color: black; /* Color del texto */
     font-size: 16px; /* Tamaño de la fuente */
     padding: 10px; /* Espaciado interno */
     margin: 5px; /* Margen externo */
-    border: 2px solid black; /* Borde */
+    border: 1.5px solid black; /* Borde */
     border-radius: 5px; /* Esquinas redondeadas */
 }
 
@@ -332,27 +319,11 @@ padding:5px</string>
     </rect>
    </property>
    <property name="styleSheet">
-<<<<<<< HEAD
-
-=======
->>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
-    <string notr="true">QPushButton{
-border:1.5px solid #343A40;
-border-radius:3px;
-border-bottom-left-radius: 10px; 
-border-bottom-right-radius: 10px;
-}
-
-QPushButton:hover{
-	background:#D5DBDB;
-}</string>
-=======
-    <string notr="true">border:1.5px solid #343A40;
+    <string notr="true">border:3px solid #B2F2BB;
 border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
 border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
 
 </string>
->>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -384,10 +355,13 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:2px solid #343A40;
-background:#343A40;
+    <string notr="true">border:1.7px solid black;
+background:#B2F2BB;
 border-radius:4.5px;
-color:#fff</string>
+border-left:none;
+border-right:none;
+border-top:none;
+</string>
    </property>
    <property name="text">
     <string>VENTAS</string>
@@ -406,23 +380,10 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
-
-    <string notr="true">QPushButton{
-border:1.5px solid #343A40;
-border-radius:3px;
-border-bottom-left-radius: 10px; 
-border-bottom-right-radius: 10px;
-}
-
-QPushButton:hover{
-	background:#D5DBDB;
-}</string>
-=======
-    <string notr="true">border:1.5px solid #343A40;
+    <string notr="true">border:3px solid #B2F2BB;
 border-radius:3px;
 border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
 border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
->>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -454,10 +415,13 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:2px solid #343A40;
-background:#343A40;
+    <string notr="true">border:1.7px solid black;
+background:#B2F2BB;
 border-radius:4.5px;
-color:#fff</string>
+border-left:none;
+border-right:none;
+border-top:none;
+</string>
    </property>
    <property name="text">
     <string>CAJA</string>
@@ -476,26 +440,10 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
-<<<<<<< HEAD
-
-=======
->>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
-    <string notr="true">QPushButton{
-border:1.5px solid #343A40;
-border-radius:3px;
-border-bottom-left-radius: 10px; 
-border-bottom-right-radius: 10px;
-}
-
-QPushButton:hover{
-	background:#D5DBDB;
-}</string>
-=======
-    <string notr="true">border:1.5px solid #343A40;
+    <string notr="true">border:3px solid #B2F2BB;
 border-radius:3px;
 border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
 border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
->>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -527,10 +475,13 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:2px solid #343A40;
-background:#343A40;
+    <string notr="true">border:1.7px solid black;
+background:#B2F2BB;
 border-radius:4.5px;
-color:#fff</string>
+border-left:none;
+border-right:none;
+border-top:none;
+</string>
    </property>
    <property name="text">
     <string>PRODUCTOS</string>
@@ -549,26 +500,10 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
-<<<<<<< HEAD
-
-=======
->>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
-    <string notr="true">QPushButton{
-border:1.5px solid #343A40;
-border-radius:3px;
-border-bottom-left-radius: 10px; 
-border-bottom-right-radius: 10px;
-}
-
-QPushButton:hover{
-	background:#D5DBDB;
-}</string>
-=======
-    <string notr="true">border:1.5px solid #343A40;
+    <string notr="true">border:3px solid #B2F2BB;
 border-radius:3px;
 border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */
 border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</string>
->>>>>>> origin/feature/pane_medio_panelControl
    </property>
    <property name="text">
     <string/>
@@ -600,10 +535,13 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border:2px solid #343A40;
-background:#343A40;
+    <string notr="true">border:1.7px solid black;
+background:#B2F2BB;
 border-radius:4.5px;
-color:#fff</string>
+border-left:none;
+border-right:none;
+border-top:none;
+</string>
    </property>
    <property name="text">
     <string>COTIZACIONES</string>
