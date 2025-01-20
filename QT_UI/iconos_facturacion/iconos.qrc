@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="xy">
+    <file>caja-registradora.png</file>
+    <file>escoba.png</file>
+    <file>mano.png</file>
+    <file>nueva-cuenta.png</file>
+    <file>borrador-borrar.png</file>
+  </qresource>
+</RCC>

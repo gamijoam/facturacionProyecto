@@ -34,9 +34,11 @@ class Widget(QWidget):
         self.ui_ventana_facturacion = Ui_Widget()
         self.ui_ventana_facturacion.setupUi(self.ventana_facturacion)
         self.ui_ventana_facturacion.pushButton.clicked.connect(self.agregarItems)
+      #  self.ui_ventana_facturacion.pushButton_2.clicked.connect(self.borrar_busqueda)
         self.ventana_facturacion.show()
 
-
+    #def borrar_busqueda(self):
+    #    self.ui_ventana_facturacion.lineEdit.clear()
 
     def agregarItems(self):
         self.items = [
@@ -53,21 +55,9 @@ class Widget(QWidget):
             self.ui_ventana_facturacion.tableWidget.setItem(row_position, 1, QTableWidgetItem(item["cantidad"]))
             self.ui_ventana_facturacion.tableWidget.setItem(row_position, 2, QTableWidgetItem(item["precio"]))
 
-
-
     def cerrar_ventana_login(self):
-        self.close()
-        self.panel_de_control()
-
-
-
-
-
-
-        '''self.ui_ventana_facturacion.tableWidget.setColumnWidth(0,182.75)
-        self.ui_ventana_facturacion.tableWidget.setColumnWidth(1,182.75)
-        self.ui_ventana_facturacion.tableWidget.setColumnWidth(2,182.75)
-        self.ui_ventana_facturacion.tableWidget.setColumnWidth(3,182.75)'''
+       self.close()
+       self.panel_de_control()
 
 
 if __name__ == "__main__":
