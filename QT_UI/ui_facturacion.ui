@@ -16,439 +16,138 @@
   <property name="styleSheet">
    <string notr="true">font-size:15px</string>
   </property>
-  <widget class="QLabel" name="label_3">
+  <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>0</y>
-     <width>341</width>
-     <height>61</height>
+     <x>270</x>
+     <y>180</y>
+     <width>771</width>
+     <height>441</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">font-size:40px</string>
+   <property name="widgetResizable">
+    <bool>true</bool>
    </property>
-   <property name="text">
-    <string>VENTAS</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>490</y>
-     <width>161</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size:16px</string>
-   </property>
-   <property name="text">
-    <string>Total venta producto</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>520</y>
-     <width>161</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>1000.32 BS</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>520</y>
-     <width>161</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>0 BS</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>490</y>
-     <width>161</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size:16px</string>
-   </property>
-   <property name="text">
-    <string>Efectivo Cliente</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>490</y>
-     <width>161</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size:16px</string>
-   </property>
-   <property name="text">
-    <string>Cambio del cliente</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>520</y>
-     <width>161</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>15 BS</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>570</y>
-     <width>661</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="styleSheet">
-       <string notr="true">
-</string>
-      </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>769</width>
+      <height>439</height>
+     </rect>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>771</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <column>
       <property name="text">
-       <string>Cobrar</string>
+       <string>CODIGO</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_3">
+     </column>
+     <column>
       <property name="text">
-       <string>Limpiar</string>
+       <string>PRODUCTO</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_2">
+     </column>
+     <column>
       <property name="text">
-       <string>Cancelar</string>
+       <string>PRECIO</string>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>Buscar</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+     </column>
+    </widget>
+   </widget>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>880</x>
-     <y>20</y>
-     <width>231</width>
-     <height>18</height>
+     <x>460</x>
+     <y>623</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size: 20px</string>
    </property>
    <property name="text">
-    <string>Precio dolar 53,40 BS</string>
+    <string>PRECIONA</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>70</y>
-     <width>731</width>
-     <height>401</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QTableWidget {
-    font-size: 14px; /* Tamaño de la fuente */
-}
-
-QTableWidget QTableCornerButton::section {
-    background-color: #f0f0f0; /* Color de fondo para la esquina */
-}
-
-QTableWidget::item {
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 5px; /* Añade un poco de espacio alrededor del texto */
-}
-
-QHeaderView::section {
-    background-color: #f0f0f0; /* Color de fondo para los encabezados */
-    padding: 5px; /* Espacio alrededor del texto en los encabezados */
-    font-weight: bold; /* Texto en negrita para los encabezados */
-    text-align: center; /* Centra el texto en los encabezados */
-}</string>
-   </property>
-   <property name="horizontalScrollBarPolicy">
-    <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
-   </property>
-   <property name="rowCount">
-    <number>3</number>
-   </property>
-   <row/>
-   <row/>
-   <row/>
-   <column>
-    <property name="text">
-     <string>ID Producto</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Nombre Producto</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Cantidad</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Valor Unidad</string>
-    </property>
-   </column>
-   <item row="0" column="0">
-    <property name="text">
-     <string>2652152</string>
-    </property>
-    <property name="textAlignment">
-     <set>AlignCenter</set>
-    </property>
-   </item>
-   <item row="0" column="1">
-    <property name="text">
-     <string>mayonesa</string>
-    </property>
-   </item>
-   <item row="0" column="2">
-    <property name="text">
-     <string>1</string>
-    </property>
-   </item>
-   <item row="0" column="3">
-    <property name="text">
-     <string>100</string>
-    </property>
-   </item>
-   <item row="1" column="0">
-    <property name="text">
-     <string>154152</string>
-    </property>
-    <property name="textAlignment">
-     <set>AlignCenter</set>
-    </property>
-   </item>
-   <item row="1" column="1">
-    <property name="text">
-     <string>salsa de tomate</string>
-    </property>
-   </item>
-   <item row="1" column="2">
-    <property name="text">
-     <string>2</string>
-    </property>
-   </item>
-   <item row="1" column="3">
-    <property name="text">
-     <string>300</string>
-    </property>
-   </item>
-   <item row="2" column="0">
-    <property name="text">
-     <string>5648455</string>
-    </property>
-    <property name="textAlignment">
-     <set>AlignCenter</set>
-    </property>
-   </item>
-   <item row="2" column="1">
-    <property name="text">
-     <string>atun</string>
-    </property>
-   </item>
-   <item row="2" column="2">
-    <property name="text">
-     <string>3</string>
-    </property>
-   </item>
-   <item row="2" column="3">
-    <property name="text">
-     <string>400</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>201</width>
-     <height>581</height>
+     <width>211</width>
+     <height>51</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::FocusPolicy::NoFocus</enum>
-   </property>
-   <property name="contextMenuPolicy">
-    <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
-   </property>
-   <property name="acceptDrops">
-    <bool>false</bool>
-   </property>
-   <property name="layoutDirection">
-    <enum>Qt::LayoutDirection::LeftToRight</enum>
-   </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
-   </property>
    <property name="styleSheet">
-    <string notr="true">QGroupBox {
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 12px;
-    font-weight: bold;
+    <string notr="true">QFrame {
+    border: 1px solid black;  /* Borde para el QFrame */
+    background-color: white;  /* Fondo para el QFrame */
+	border-radius:5px;
 }
-QGroupBox::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center; /* Alinea el título en el centro */
-    
+QLabel {
+    border: 2px solid #CCDBA8;  /* Elimina el borde del QLabel */
+    background-color: #CCDBA8;  /* Fondo transparente */
+	border-radius:5px;
+	
 }</string>
    </property>
-   <property name="inputMethodHints">
-    <set>Qt::InputMethodHint::ImhNone</set>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
    </property>
-   <property name="title">
-    <string>INFORMACION DE VENTAS</string>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
    </property>
-   <property name="flat">
-    <bool>false</bool>
-   </property>
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
+      <y>10</y>
       <width>191</width>
-      <height>616</height>
+      <height>31</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0">
-     <property name="spacing">
-      <number>20</number>
-     </property>
-     <property name="sizeConstraint">
-      <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
-     </property>
-     <property name="leftMargin">
-      <number>5</number>
-     </property>
-     <property name="rightMargin">
-      <number>9</number>
-     </property>
-     <property name="bottomMargin">
-      <number>200</number>
-     </property>
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Nº TRANSACCION</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_7">
-       <property name="frameShape">
-        <enum>QFrame::Shape::NoFrame</enum>
-       </property>
-       <property name="text">
-        <string>Fecha de venta</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_5"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_8">
-       <property name="minimumSize">
-        <size>
-         <width>177</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="inputMethodHints">
-        <set>Qt::InputMethodHint::ImhNone</set>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::Shape::NoFrame</enum>
-       </property>
-       <property name="text">
-        <string>Venta realizada por</string>
-       </property>
-       <property name="indent">
-        <number>-1</number>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_6"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_9">
-       <property name="text">
-        <string>Nº CAJA</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_7"/>
-     </item>
-    </layout>
+    <property name="text">
+     <string>15</string>
+    </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-decoration:underline;
+font: 600 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>ID PRODUCTO</string>
+   </property>
   </widget>
  </widget>
  <resources/>

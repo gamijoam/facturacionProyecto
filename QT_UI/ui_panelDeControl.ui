@@ -26,6 +26,10 @@
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
+=======
+
+>>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -328,7 +332,10 @@ padding:5px</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
 
+=======
+>>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -469,7 +476,10 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
 
+=======
+>>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
@@ -539,7 +549,10 @@ color:#fff</string>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
 
+=======
+>>>>>>> b61bcd2 (Rediseño de la GUI facturacion)
     <string notr="true">QPushButton{
 border:1.5px solid #343A40;
 border-radius:3px;
