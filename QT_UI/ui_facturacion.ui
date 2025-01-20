@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1078</width>
-    <height>656</height>
+    <width>1166</width>
+    <height>672</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,9 +19,9 @@
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>220</x>
      <y>180</y>
-     <width>771</width>
+     <width>761</width>
      <height>441</height>
     </rect>
    </property>
@@ -33,7 +33,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>769</width>
+      <width>759</width>
       <height>439</height>
      </rect>
     </property>
@@ -67,10 +67,10 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>220</x>
      <y>610</y>
      <width>161</width>
-     <height>41</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -81,7 +81,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">border:1px solid black;
-background: #51E058;
+background: #FFC0CB;
 border-radius:2px;
 text-align:left;
 padding-left:30px</string>
@@ -106,10 +106,10 @@ padding-left:30px</string>
 	border-radius:5px;
 }
 QLabel {
-    border: 2px solid #CCDBA8;  /* Elimina el borde del QLabel */
-    background-color: #CCDBA8;  /* Fondo transparente */
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
 	border-radius:5px;
-	
+	font-size:20px
 }</string>
    </property>
    <property name="frameShape">
@@ -128,20 +128,7 @@ QLabel {
      </rect>
     </property>
     <property name="text">
-     <string>15</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>10</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>BS</string>
+     <string>5828515326</string>
     </property>
    </widget>
   </widget>
@@ -178,10 +165,10 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
 	border-radius:5px;
 }
 QLabel {
-    border: 2px solid #CCDBA8;  /* Elimina el borde del QLabel */
-    background-color: #CCDBA8;  /* Fondo transparente */
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
 	border-radius:5px;
-	
+	font-size:20px
 }</string>
    </property>
    <property name="frameShape">
@@ -200,20 +187,7 @@ QLabel {
      </rect>
     </property>
     <property name="text">
-     <string>15</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>10</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>BS</string>
+     <string>Carne de vaca</string>
     </property>
    </widget>
   </widget>
@@ -250,10 +224,10 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
 	border-radius:5px;
 }
 QLabel {
-    border: 2px solid #CCDBA8;  /* Elimina el borde del QLabel */
-    background-color: #CCDBA8;  /* Fondo transparente */
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
 	border-radius:5px;
-	
+	font-size:20px
 }</string>
    </property>
    <property name="frameShape">
@@ -272,7 +246,7 @@ QLabel {
      </rect>
     </property>
     <property name="text">
-     <string>15</string>
+     <string>150</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -303,25 +277,31 @@ QLabel {
 font: 600 12pt &quot;Segoe UI&quot;;</string>
    </property>
    <property name="text">
-    <string>ID PRODUCTO</string>
+    <string>PRECIO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinBox">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>17</x>
      <y>143</y>
-     <width>88</width>
+     <width>81</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>110</y>
-     <width>111</width>
+     <width>101</width>
      <height>31</height>
     </rect>
    </property>
@@ -336,10 +316,10 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
   <widget class="QFrame" name="frame_5">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>130</x>
      <y>140</y>
      <width>71</width>
-     <height>41</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -349,10 +329,10 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
 	border-radius:5px;
 }
 QLabel {
-    border: 2px solid #CCDBA8;  /* Elimina el borde del QLabel */
-    background-color: #CCDBA8;  /* Fondo transparente */
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
 	border-radius:5px;
-	
+	font-size:20px
 }</string>
    </property>
    <property name="frameShape">
@@ -361,37 +341,27 @@ QLabel {
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>10</x>
       <y>10</y>
-      <width>31</width>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>BS</string>
+     <string>10</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>31</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>15</string>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
    </widget>
   </widget>
   <widget class="QLabel" name="label_13">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>140</x>
      <y>110</y>
      <width>51</width>
      <height>31</height>
@@ -408,9 +378,9 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>220</x>
      <y>130</y>
-     <width>771</width>
+     <width>761</width>
      <height>41</height>
     </rect>
    </property>
@@ -424,7 +394,7 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>990</x>
+     <x>920</x>
      <y>130</y>
      <width>51</width>
      <height>41</height>
@@ -450,14 +420,433 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>320</x>
      <y>620</y>
-     <width>21</width>
-     <height>21</height>
+     <width>31</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/xy/mano.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>610</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;
+background: #87CEEB;
+border-radius:2px;
+text-align:left;
+padding-left:30px</string>
+   </property>
+   <property name="text">
+    <string>EFECTIVO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>610</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;
+background: #B2F2BB;
+border-radius:2px;
+text-align:left;
+padding-left:30px</string>
+   </property>
+   <property name="text">
+    <string>CLIENTE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>610</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;
+background: #E6E6FA;
+border-radius:2px;
+text-align:left;
+padding-left:30px</string>
+   </property>
+   <property name="text">
+    <string>LIMPIAR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>620</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/xy/caja-registradora.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>620</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/xy/escoba.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>620</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/xy/nueva-cuenta.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-decoration:underline;
+font: 600 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>IVA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_6">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>50</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    border: 1px solid black;  /* Borde para el QFrame */
+    background-color: white;  /* Fondo para el QFrame */
+	border-radius:5px;
+}
+QLabel {
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
+	border-radius:5px;
+	font-size:20px
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12%</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-decoration:underline;
+font: 600 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>DESCUENTO</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_7">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>50</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    border: 1px solid black;  /* Borde para el QFrame */
+    background-color: white;  /* Fondo para el QFrame */
+	border-radius:5px;
+}
+QLabel {
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
+	border-radius:5px;
+	font-size:20px
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    border: 1px solid black;  /* Borde para el QFrame */
+    background-color: white;  /* Fondo para el QFrame */
+	border-radius:5px;
+}
+QLabel {
+    border: 2px solid #FFD700;  /* Elimina el borde del QLabel */
+    background-color: #FFD700;  /* Fondo transparente */
+	border-radius:5px;
+	font-size:20px
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unidad</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_25">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-decoration:underline;
+font: 600 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Unidad</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>180</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;
+background:  #FFC0CB;
+border-radius:2px;
+text-align:left;
+padding-left:20px</string>
+   </property>
+   <property name="text">
+    <string>AGREGAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>240</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;
+background: #87CEEB;
+border-radius:2px;
+text-align:left;
+padding-left:20px</string>
+   </property>
+   <property name="text">
+    <string>VER TICKET</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>190</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/xy/mas.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>1108</x>
+     <y>250</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/xy/boleto.png);</string>
    </property>
    <property name="text">
     <string/>
