@@ -29,7 +29,9 @@ class Ui_panel_de_control(object):
         self.pushButton_11.setObjectName(u"pushButton_11")
         self.pushButton_11.setGeometry(QRect(280, 40, 141, 131))
         self.pushButton_11.setStyleSheet(u"border:3px solid #B2F2BB;\n"
+
 "background-color: rgb(234, 234, 234);\n"
+
 "border-radius:3px;\n"
 "border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
 "border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */\n"
@@ -116,7 +118,11 @@ class Ui_panel_de_control(object):
 
         self.verticalFrame_2 = QFrame(self.widget_2)
         self.verticalFrame_2.setObjectName(u"verticalFrame_2")
+
         self.verticalFrame_2.setGeometry(QRect(80, 90, 161, 451))
+
+        self.verticalFrame_2.setGeometry(QRect(80, 70, 161, 451))
+
         self.verticalFrame_2.setStyleSheet(u"QFrame{\n"
 "	border:none;\n"
 "}\n"
@@ -207,7 +213,9 @@ class Ui_panel_de_control(object):
         self.pushButton_20.setObjectName(u"pushButton_20")
         self.pushButton_20.setGeometry(QRect(440, 40, 141, 131))
         self.pushButton_20.setStyleSheet(u"border:3px solid #B2F2BB;\n"
+
 "background-color: rgb(234, 234, 234);\n"
+
 "border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
 "border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */\n"
 "\n"
