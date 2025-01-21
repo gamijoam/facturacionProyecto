@@ -23,9 +23,9 @@ class Widget(QWidget):
         self.items = None
         self.codigo = None
         self.capturadora = Capturadora_codigo_de_barra()
+        self.capturadora.codigo_escaneado.connect(self.actualizar_tabla)  # Conectar señal
         self.ui_login = Ui_Form()
         self.ui_login.setupUi(self)
-        #self.ui_login.pushButton.clicked.connect(self.capturadora.escanear_codigos)
         self.ui_login.pushButton.clicked.connect(self.cerrar_ventana_login)
 
     def panel_de_control(self):
@@ -39,36 +39,27 @@ class Widget(QWidget):
         self.ventana_facturacion = QtWidgets.QMainWindow()
         self.ui_ventana_facturacion = Ui_Widget()
         self.ui_ventana_facturacion.setupUi(self.ventana_facturacion)
-        self.ui_ventana_facturacion.pushButton_6.clicked.connect(self.agregarItems)
-        #self.ui_ventana_facturacion.pushButton_2.clicked.connect(self.borrar_busqueda)
+        self.ui_ventana_facturacion.tableWidget.setColumnWidth(0,257)
+        self.ui_ventana_facturacion.tableWidget.setColumnWidth(1, 257)
+        self.ui_ventana_facturacion.tableWidget.setColumnWidth(2, 257)
         self.ventana_facturacion.show()
-        self.ventanita = self.capturadora.escanear_codigos()
+        self.capturadora.start()  # Iniciar el hilo de la capturadora
+
+    def actualizar_tabla(self, codigo):
         row_position = self.ui_ventana_facturacion.tableWidget.rowCount()
         self.ui_ventana_facturacion.tableWidget.insertRow(row_position)
-        self.ui_ventana_facturacion.tableWidget.setItem(row_position, 0, QTableWidgetItem(self.ventanita))
-        self.ui_ventana_facturacion.tableWidget.setItem(row_position, 1, QTableWidgetItem(self.ventanita))
-        self.ui_ventana_facturacion.tableWidget.setItem(row_position, 2, QTableWidgetItem(self.ventanita))
-
-
-    def agregarItems(self):
-        print (self.codigo)
-
-
-        self.items = [
-                {"producto": "Manzana", "cantidad": "5", "precio": "1.000"},
-                {"producto": "Banana", "cantidad": "3", "precio": "500"},
-                {"producto": "Naranja", "cantidad": "2", "precio": "800"},
-            ]
-            # Agregar los ítems a la tabla
-
+        self.ui_ventana_facturacion.tableWidget.setItem(row_position, 0, QTableWidgetItem(codigo))
+        self.ui_ventana_facturacion.tableWidget.setItem(row_position, 1, QTableWidgetItem("Producto"))
+        self.ui_ventana_facturacion.tableWidget.setItem(row_position, 2, QTableWidgetItem("Precio"))
 
     def cerrar_ventana_login(self):
-       self.close()
-       self.panel_de_control()
+        self.close()
+        self.panel_de_control()
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = Widget()
     widget.show()
+    app.aboutToQuit.connect(widget.capturadora.stop)  # Detener el hilo al salir
     sys.exit(app.exec())
