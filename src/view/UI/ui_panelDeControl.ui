@@ -38,7 +38,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="iconos_panel_de_control/iconos.qrc">
+    <iconset resource="../iconos_panel_de_control/iconos.qrc">
      <normaloff>:/iconos_panel_control/clasificacion.png</normaloff>:/iconos_panel_control/clasificacion.png</iconset>
    </property>
    <property name="iconSize">
@@ -193,11 +193,7 @@ border-radius:5px;</string>
     <property name="geometry">
      <rect>
       <x>80</x>
-
-      <y>90</y>
-
       <y>70</y>
-
       <width>161</width>
       <height>451</height>
      </rect>
@@ -363,7 +359,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="iconos_panel_de_control/iconos.qrc">
+    <iconset resource="../iconos_panel_de_control/iconos.qrc">
      <normaloff>:/iconos_panel_control/carrito_de_compras.png</normaloff>:/iconos_panel_control/carrito_de_compras.png</iconset>
    </property>
    <property name="iconSize">
@@ -424,7 +420,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="iconos_panel_de_control/iconos.qrc">
+    <iconset resource="../iconos_panel_de_control/iconos.qrc">
      <normaloff>:/iconos_panel_control/caja-registradora.png</normaloff>:/iconos_panel_control/caja-registradora.png</iconset>
    </property>
    <property name="iconSize">
@@ -485,7 +481,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="iconos_panel_de_control/iconos.qrc">
+    <iconset resource="../iconos_panel_de_control/iconos.qrc">
      <normaloff>:/iconos_panel_control/productos-de-limpieza.png</normaloff>:/iconos_panel_control/productos-de-limpieza.png</iconset>
    </property>
    <property name="iconSize">
@@ -546,7 +542,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="iconos_panel_de_control/iconos.qrc">
+    <iconset resource="../iconos_panel_de_control/iconos.qrc">
      <normaloff>:/iconos_panel_control/grafico-de-acciones.png</normaloff>:/iconos_panel_control/grafico-de-acciones.png</iconset>
    </property>
    <property name="iconSize">
@@ -589,7 +585,7 @@ border-top:none;
   </widget>
  </widget>
  <resources>
-  <include location="iconos_panel_de_control/iconos.qrc"/>
+  <include location="../iconos_panel_de_control/iconos.qrc"/>
  </resources>
  <connections/>
 </ui>
