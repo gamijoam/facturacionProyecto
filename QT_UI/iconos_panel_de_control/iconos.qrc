@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="iconos_panel_control">
+    <file>grafico-de-acciones.png</file>
+    <file>productos-de-limpieza.png</file>
+    <file>caja-registradora.png</file>
     <file>agregar-usuario.png</file>
     <file>camion-de-reparto.png</file>
     <file>carrito_de_compras.png</file>
