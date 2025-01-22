@@ -4,13 +4,13 @@
 # Importación de módulos necesarios
 import sys  # Proporciona acceso a funciones y variables relacionadas con el intérprete de Python.
 from PySide6 import QtWidgets  # Importa el módulo QtWidgets de PySide6 para crear interfaces gráficas.
-from PySide6.QtWidgets import QApplication, QWidget, QTableWidgetItem  # Importa clases específicas de QtWidgets.
+from PySide6.QtWidgets import QApplication, QWidget  # Importa clases específicas de QtWidgets.
 
 # Importación de las interfaces gráficas generadas automáticamente desde archivos .ui
 # Nota: Estas interfaces deben generarse usando el comando pyside6-uic.
-from WINDOWS_PY.ui_facturacion import Ui_Widget  # Interfaz de facturación.
-from WINDOWS_PY.ui_login import Ui_Form  # Interfaz de inicio de sesión.
-from WINDOWS_PY.ui_panelDeControl import Ui_panel_de_control  # Interfaz del panel de control.
+from src.view.PY.ui_facturacion import Ui_Widget  # Interfaz de facturación.
+from src.view.PY.ui_login import Ui_Form  # Interfaz de inicio de sesión.
+from src.view.PY.ui_panelDeControl import Ui_panel_de_control  # Interfaz del panel de control.
 
 # Definición de la clase principal de la aplicación
 class Widget(QWidget):
