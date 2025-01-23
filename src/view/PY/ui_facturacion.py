@@ -8,11 +8,16 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import (QCoreApplication, QMetaObject, QRect,
-                            QSize, Qt)
-from PySide6.QtGui import (QFont, QIcon)
-from PySide6.QtWidgets import (QFrame, QLabel,
-                               QLineEdit, QPushButton, QScrollArea, QSpinBox, QTableWidget, QTableWidgetItem, QWidget)
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QHeaderView, QLabel,
+    QLineEdit, QPushButton, QScrollArea, QSizePolicy,
+    QSpinBox, QTableWidget, QTableWidgetItem, QWidget)
 from src.view.iconos_facturacion import iconos
 
 class Ui_Widget(object):
@@ -129,7 +134,7 @@ class Ui_Widget(object):
         self.label_9.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.spinBox = QSpinBox(Widget)
         self.spinBox.setObjectName(u"spinBox")
-        self.spinBox.setGeometry(QRect(17, 143, 81, 31))
+        self.spinBox.setGeometry(QRect(17, 143, 88, 31))
         self.spinBox.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.label_10 = QLabel(Widget)
         self.label_10.setObjectName(u"label_10")
@@ -164,10 +169,10 @@ class Ui_Widget(object):
         self.lineEdit = QLineEdit(Widget)
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setGeometry(QRect(220, 130, 761, 41))
-        self.lineEdit.setStyleSheet(u"border-radius:5px;")
+        self.lineEdit.setStyleSheet(u"")
         self.pushButton_2 = QPushButton(Widget)
         self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(920, 130, 51, 41))
+        self.pushButton_2.setGeometry(QRect(1020, 130, 51, 41))
         self.pushButton_2.setStyleSheet(u"border:none")
         icon = QIcon()
         icon.addFile(u":/xy/borrador-borrar.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)

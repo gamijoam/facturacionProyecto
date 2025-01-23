@@ -385,7 +385,7 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:5px;</string>
+    <string notr="true"/>
    </property>
    <property name="placeholderText">
     <string>BUSCAR PRODUCTO</string>
@@ -394,7 +394,7 @@ font: 600 12pt &quot;Segoe UI&quot;;</string>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>920</x>
+     <x>1020</x>
      <y>130</y>
      <width>51</width>
      <height>41</height>

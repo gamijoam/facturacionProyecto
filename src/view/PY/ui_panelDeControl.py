@@ -8,11 +8,15 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import (QCoreApplication, QMetaObject, QRect,
-                            QSize, Qt)
-from PySide6.QtGui import (QFont, QIcon)
-from PySide6.QtWidgets import (QFrame, QLabel, QPushButton,
-                               QVBoxLayout, QWidget)
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QPushButton,
+    QSizePolicy, QVBoxLayout, QWidget)
 from src.view.iconos_panel_de_control import iconos
 
 class Ui_panel_de_control(object):
@@ -25,9 +29,8 @@ class Ui_panel_de_control(object):
         self.pushButton_11.setObjectName(u"pushButton_11")
         self.pushButton_11.setGeometry(QRect(280, 40, 141, 131))
         self.pushButton_11.setStyleSheet(u"border:3px solid #B2F2BB;\n"
-
 "background-color: rgb(234, 234, 234);\n"
-
+"\n"
 "border-radius:3px;\n"
 "border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
 "border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */\n"
@@ -114,11 +117,7 @@ class Ui_panel_de_control(object):
 
         self.verticalFrame_2 = QFrame(self.widget_2)
         self.verticalFrame_2.setObjectName(u"verticalFrame_2")
-
-        self.verticalFrame_2.setGeometry(QRect(80, 90, 161, 451))
-
         self.verticalFrame_2.setGeometry(QRect(80, 70, 161, 451))
-
         self.verticalFrame_2.setStyleSheet(u"QFrame{\n"
 "	border:none;\n"
 "}\n"
@@ -209,9 +208,9 @@ class Ui_panel_de_control(object):
         self.pushButton_20.setObjectName(u"pushButton_20")
         self.pushButton_20.setGeometry(QRect(440, 40, 141, 131))
         self.pushButton_20.setStyleSheet(u"border:3px solid #B2F2BB;\n"
-
+"\n"
 "background-color: rgb(234, 234, 234);\n"
-
+"\n"
 "border-bottom-left-radius: 10px; /* Radio de la esquina inferior izquierda */\n"
 "border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */\n"
 "\n"
