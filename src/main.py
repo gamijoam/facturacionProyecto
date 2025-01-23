@@ -16,7 +16,6 @@ class Widget(QWidget):
         login(self)
 
 
-
 if __name__ == "__main__":
     """
     Punto de entrada principal de la aplicación.
