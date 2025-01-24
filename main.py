@@ -5,10 +5,8 @@
 import sys  # Proporciona acceso a funciones y variables relacionadas con el intérprete de Python.
 from PySide6 import QtWidgets  # Importa el módulo QtWidgets de PySide6 para crear interfaces gráficas.
 from PySide6.QtWidgets import QApplication, QWidget , QCompleter # Importa clases específicas de QtWidgets.
-
-from src.models.buscador_bd import Buscar_producto
 from src.controllers.login import login
-from src.controllers.panel_de_control import panel_de_control
+
 
 class Widget(QWidget):
     def __init__(self, parent=None):

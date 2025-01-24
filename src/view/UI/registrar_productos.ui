@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormularioRegistroProductos</class>
+ <widget class="QWidget" name="FormularioRegistroProductos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registro de Productos</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="nombreProducto">
+     <property name="placeholderText">
+      <string>Nombre del Producto</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="codigoBarras">
+     <property name="placeholderText">
+      <string>Código de Barras</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="descripcion">
+     <property name="placeholderText">
+      <string>Descripción</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="categoria">
+     <item>
+      <property name="text">
+       <string>Categoría 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Categoría 2</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="stockMinimo">
+     <property name="prefix">
+      <string>Stock Mínimo:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="stockActual">
+     <property name="prefix">
+      <string>Stock Actual:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="proveedor">
+     <item>
+      <property name="text">
+       <string>Proveedor 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Proveedor 2</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="registrarProducto">
+       <property name="text">
+        <string>Registrar Producto</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="limpiarFormulario">
+       <property name="text">
+        <string>Limpiar Formulario</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelar">
+       <property name="text">
+        <string>Cancelar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -72,7 +72,6 @@ class FacturacionWindow(QtWidgets.QMainWindow):
         self.ui_ventana_facturacion.label_7.setText(str(lista_producto[0][2])) #Precio
         self.ui_ventana_facturacion.label_11.setText(str(int(lista_producto[0][3])))
 
-    #Seguir programando para que se muestren los datos en los Label , Falta stock, precio , iva etc
 
 
 

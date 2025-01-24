@@ -1,6 +1,5 @@
 import mysql.connector
 from src.database import conexion_db
-
 class Buscar_producto:
     def __init__(self,database):
         self.database = database
