@@ -66,9 +66,11 @@ class FacturacionWindow(QtWidgets.QMainWindow):
         """
         Actualiza la etiqueta en la interfaz con el texto proporcionado.
         """
-
-        self.ui_ventana_facturacion.label_4.setText(lista_producto[0][0])
-        self.ui_ventana_facturacion.label.setText(lista_producto[0][1])
+        print(lista_producto[0][2])
+        self.ui_ventana_facturacion.label_4.setText(lista_producto[0][0]) #Nombre Producto
+        self.ui_ventana_facturacion.label.setText(lista_producto[0][1])  #Codigo de Barras
+        self.ui_ventana_facturacion.label_7.setText(str(lista_producto[0][2])) #Precio
+        self.ui_ventana_facturacion.label_11.setText(str(int(lista_producto[0][3])))
 
     #Seguir programando para que se muestren los datos en los Label , Falta stock, precio , iva etc
 

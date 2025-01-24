@@ -10,7 +10,7 @@ class Buscar_producto:
             instacia_conexion = conexion_db.Conexion()
             conexion = instacia_conexion.conexion(self.database)
             cursor = conexion.cursor()
-            consulta = "SELECT nombre,codigo_barras,precio_compra FROM PRODUCTOS WHERE nombre LIKE %s"  # Usar LIKE para búsqueda parcial
+            consulta = "SELECT nombre,codigo_barras,precio_compra,stock_actual FROM PRODUCTOS WHERE nombre LIKE %s"  # Usar LIKE para búsqueda parcial
             cursor.execute(consulta, (f'%{producto}%',))  # Buscar coincidencias parciales
             resultado = cursor.fetchall()
             lista_nombres =  [item for item in resultado]  # Extraer solo los nombres
