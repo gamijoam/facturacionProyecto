@@ -5,29 +5,25 @@ class Buscar_producto:
     def __init__(self,database):
         self.database = database
 
-    def buscador_de_producto(self):
+    def buscador_de_producto(self, producto):
         try:
             instacia_conexion = conexion_db.Conexion()
             conexion = instacia_conexion.conexion(self.database)
             cursor = conexion.cursor()
-            consulta = 'SELECT nombre FROM PRODUCTOS'
-            cursor.execute(consulta)
+            consulta = "SELECT nombre,codigo_barras,precio_compra FROM PRODUCTOS WHERE nombre LIKE %s"  # Usar LIKE para búsqueda parcial
+            cursor.execute(consulta, (f'%{producto}%',))  # Buscar coincidencias parciales
             resultado = cursor.fetchall()
-            lista_resultado = [item[0] for item in resultado ]
-            if resultado == []:
-                print("No hay resultados")
-            else:
-                print(resultado)
-                print(lista_resultado)
-
+            lista_nombres =  [item for item in resultado]  # Extraer solo los nombres
+            #print(lista_nombres)
+            return lista_nombres
         except mysql.connector.Error as error:
             print(error)
+            return []
         finally:
             if "cursor" in locals():
                 cursor.close()
             if 'conexion' in locals():
                 conexion.close()
-            return lista_resultado
 
-#hu = Buscar_producto()
-#hu.buscador_de_producto('inventario')
+#hu = Buscar_producto('inventario')
+#hu.buscador_de_producto('p')
