@@ -15,10 +15,7 @@ config = {
 def ejecutar_archivo_sql(ruta_archivo, cursor, conexion):
     """
     Ejecuta un archivo SQL en la base de datos.
-    
-    :param ruta_archivo: Ruta al archivo .sql
-    :param cursor: Cursor de la base de datos
-    :param conexion: Conexión a la base de datos
+
     """
     try:
         # Abrir el archivo SQL
@@ -41,7 +38,6 @@ def ejecutar_archivo_sql(ruta_archivo, cursor, conexion):
         print(f"❌ Error al ejecutar el archivo SQL: {err}")
 
     except Exception as e:
-        # Manejar otros errores (por ejemplo, archivo no encontrado)
         print(f"❌ Error inesperado: {e}")
 
 # Conectar a la base de datos
@@ -50,7 +46,6 @@ try:
     cursor = conexion.cursor()
     print("✅ Conexión a la base de datos establecida.")
 
-    # Ruta al archivo SQL (cambia esto por la ruta de tu archivo)
     ruta_archivo_sql = 'bd_inventario2.sql'
 
     # Ejecutar el archivo SQL
