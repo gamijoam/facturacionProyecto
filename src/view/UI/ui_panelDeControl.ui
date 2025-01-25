@@ -10,6 +10,12 @@
     <height>596</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>7</pointsize>
+    <bold>true</bold>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Panel de control</string>
   </property>
@@ -17,9 +23,12 @@
    <string notr="true"/>
   </property>
   <widget class="QPushButton" name="pushButton_11">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>760</x>
      <y>40</y>
      <width>141</width>
      <height>131</height>
@@ -51,7 +60,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>760</x>
      <y>10</y>
      <width>141</width>
      <height>41</height>
@@ -339,7 +348,7 @@ padding:5px</string>
   <widget class="QPushButton" name="pushButton_20">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>280</x>
      <y>40</y>
      <width>141</width>
      <height>131</height>
@@ -372,7 +381,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>280</x>
      <y>10</y>
      <width>141</width>
      <height>41</height>
@@ -401,6 +410,9 @@ border-top:none;
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_18">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -464,7 +476,7 @@ border-top:none;
   <widget class="QPushButton" name="pushButton_19">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>440</x>
      <y>40</y>
      <width>141</width>
      <height>131</height>
@@ -494,7 +506,7 @@ border-bottom-right-radius: 10px; /* Radio de la esquina inferior derecha */</st
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>440</x>
      <y>10</y>
      <width>141</width>
      <height>41</height>
@@ -516,13 +528,16 @@ border-top:none;
 </string>
    </property>
    <property name="text">
-    <string>PRODUCTOS</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;REGISTRAR &lt;br/&gt;PRODUCTO&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_21">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>920</x>

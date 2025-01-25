@@ -17,17 +17,22 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QPushButton,
     QSizePolicy, QVBoxLayout, QWidget)
-from src.view.iconos_panel_de_control import iconos
+from src.view.iconos_panel_de_control import iconos 
 
 class Ui_panel_de_control(object):
     def setupUi(self, panel_de_control):
         if not panel_de_control.objectName():
             panel_de_control.setObjectName(u"panel_de_control")
         panel_de_control.resize(1112, 596)
+        font = QFont()
+        font.setPointSize(7)
+        font.setBold(True)
+        panel_de_control.setFont(font)
         panel_de_control.setStyleSheet(u"")
         self.pushButton_11 = QPushButton(panel_de_control)
         self.pushButton_11.setObjectName(u"pushButton_11")
-        self.pushButton_11.setGeometry(QRect(280, 40, 141, 131))
+        self.pushButton_11.setEnabled(False)
+        self.pushButton_11.setGeometry(QRect(760, 40, 141, 131))
         self.pushButton_11.setStyleSheet(u"border:3px solid #B2F2BB;\n"
 "background-color: rgb(234, 234, 234);\n"
 "\n"
@@ -41,11 +46,11 @@ class Ui_panel_de_control(object):
         self.pushButton_11.setIconSize(QSize(60, 60))
         self.label_2 = QLabel(panel_de_control)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(280, 10, 141, 41))
-        font = QFont()
-        font.setPointSize(11)
-        font.setBold(True)
-        self.label_2.setFont(font)
+        self.label_2.setGeometry(QRect(760, 10, 141, 41))
+        font1 = QFont()
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.label_2.setFont(font1)
         self.label_2.setStyleSheet(u"border:1.7px solid black;\n"
 "background:#B2F2BB;\n"
 "border-radius:4.5px;\n"
@@ -198,15 +203,15 @@ class Ui_panel_de_control(object):
         self.label = QLabel(self.widget_2)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(18, 30, 221, 41))
-        font1 = QFont()
-        font1.setPointSize(13)
-        font1.setBold(True)
-        self.label.setFont(font1)
+        font2 = QFont()
+        font2.setPointSize(13)
+        font2.setBold(True)
+        self.label.setFont(font2)
         self.label.setStyleSheet(u"border:none;")
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.pushButton_20 = QPushButton(panel_de_control)
         self.pushButton_20.setObjectName(u"pushButton_20")
-        self.pushButton_20.setGeometry(QRect(440, 40, 141, 131))
+        self.pushButton_20.setGeometry(QRect(280, 40, 141, 131))
         self.pushButton_20.setStyleSheet(u"border:3px solid #B2F2BB;\n"
 "\n"
 "background-color: rgb(234, 234, 234);\n"
@@ -221,8 +226,8 @@ class Ui_panel_de_control(object):
         self.pushButton_20.setIconSize(QSize(60, 60))
         self.label_5 = QLabel(panel_de_control)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(440, 10, 141, 41))
-        self.label_5.setFont(font)
+        self.label_5.setGeometry(QRect(280, 10, 141, 41))
+        self.label_5.setFont(font1)
         self.label_5.setStyleSheet(u"border:1.7px solid black;\n"
 "background:#B2F2BB;\n"
 "border-radius:4.5px;\n"
@@ -233,6 +238,7 @@ class Ui_panel_de_control(object):
         self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.pushButton_18 = QPushButton(panel_de_control)
         self.pushButton_18.setObjectName(u"pushButton_18")
+        self.pushButton_18.setEnabled(False)
         self.pushButton_18.setGeometry(QRect(600, 40, 141, 131))
         self.pushButton_18.setStyleSheet(u"border:3px solid #B2F2BB;\n"
 "border-radius:3px;\n"
@@ -246,7 +252,7 @@ class Ui_panel_de_control(object):
         self.label_3 = QLabel(panel_de_control)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(600, 10, 141, 41))
-        self.label_3.setFont(font)
+        self.label_3.setFont(font1)
         self.label_3.setStyleSheet(u"border:1.7px solid black;\n"
 "background:#B2F2BB;\n"
 "border-radius:4.5px;\n"
@@ -257,7 +263,7 @@ class Ui_panel_de_control(object):
         self.label_3.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.pushButton_19 = QPushButton(panel_de_control)
         self.pushButton_19.setObjectName(u"pushButton_19")
-        self.pushButton_19.setGeometry(QRect(760, 40, 141, 131))
+        self.pushButton_19.setGeometry(QRect(440, 40, 141, 131))
         self.pushButton_19.setStyleSheet(u"border:3px solid #B2F2BB;\n"
 "border-radius:3px;\n"
 "background-color: rgb(234, 234, 234);\n"
@@ -269,8 +275,8 @@ class Ui_panel_de_control(object):
         self.pushButton_19.setIconSize(QSize(60, 60))
         self.label_4 = QLabel(panel_de_control)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(760, 10, 141, 41))
-        self.label_4.setFont(font)
+        self.label_4.setGeometry(QRect(440, 10, 141, 41))
+        self.label_4.setFont(font1)
         self.label_4.setStyleSheet(u"border:1.7px solid black;\n"
 "background:#B2F2BB;\n"
 "border-radius:4.5px;\n"
@@ -281,6 +287,7 @@ class Ui_panel_de_control(object):
         self.label_4.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.pushButton_21 = QPushButton(panel_de_control)
         self.pushButton_21.setObjectName(u"pushButton_21")
+        self.pushButton_21.setEnabled(False)
         self.pushButton_21.setGeometry(QRect(920, 40, 141, 131))
         self.pushButton_21.setStyleSheet(u"border:3px solid #B2F2BB;\n"
 "border-radius:3px;\n"
@@ -294,7 +301,7 @@ class Ui_panel_de_control(object):
         self.label_6 = QLabel(panel_de_control)
         self.label_6.setObjectName(u"label_6")
         self.label_6.setGeometry(QRect(920, 10, 141, 41))
-        self.label_6.setFont(font)
+        self.label_6.setFont(font1)
         self.label_6.setStyleSheet(u"border:1.7px solid black;\n"
 "background:#B2F2BB;\n"
 "border-radius:4.5px;\n"
@@ -335,7 +342,7 @@ class Ui_panel_de_control(object):
         self.pushButton_18.setText("")
         self.label_3.setText(QCoreApplication.translate("panel_de_control", u"CAJA", None))
         self.pushButton_19.setText("")
-        self.label_4.setText(QCoreApplication.translate("panel_de_control", u"PRODUCTOS", None))
+        self.label_4.setText(QCoreApplication.translate("panel_de_control", u"<html><head/><body><p>REGISTRAR <br/>PRODUCTO</p></body></html>", None))
         self.pushButton_21.setText("")
         self.label_6.setText(QCoreApplication.translate("panel_de_control", u"COTIZACIONES", None))
     # retranslateUi
