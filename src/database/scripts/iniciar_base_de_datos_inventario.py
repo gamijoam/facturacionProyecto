@@ -3,19 +3,18 @@ import mysql.connector
 # Configuración de la conexión a MariaDB
 config = {
     'host': 'localhost',      # Dirección del servidor de MariaDB
-    'user': 'user_sistema',     # Nombre de usuario de la base de datos
-    'password': '12345',  # Contraseña del usuario
-    'database': 'bd_aprendizaje',  # Nombre de la base de datos
+    'user': 'root',     # Nombre de usuario de la base de datos
+    'password': 'GaboMac',  # Contraseña del usuario
+    'database': 'mi_basedatos',  # Nombre de la base de datos
     'charset':"utf8mb4",  # Usar UTF-8
     'collation': "utf8mb4_unicode_ci",  # Colación compatible con MariaDB
-    'port': "3307"              # Puerto del servidor
+    'port': "3306"              # Puerto del servidor
 }
 
 # Función para ejecutar un archivo SQL
 def ejecutar_archivo_sql(ruta_archivo, cursor, conexion):
     """
     Ejecuta un archivo SQL en la base de datos.
-
     """
     try:
         # Abrir el archivo SQL
@@ -46,7 +45,7 @@ try:
     cursor = conexion.cursor()
     print("✅ Conexión a la base de datos establecida.")
 
-    ruta_archivo_sql = 'bd_inventario2.sql'
+    ruta_archivo_sql = '/home/gabriel/Documentos/facturacionProyecto/src/database/scripts/bd_inventario2.sql'
 
     # Ejecutar el archivo SQL
     ejecutar_archivo_sql(ruta_archivo_sql, cursor, conexion)

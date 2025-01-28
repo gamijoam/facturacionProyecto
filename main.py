@@ -9,6 +9,8 @@ from src.controllers.login import login
 from src.controllers.registrar_producto import ejecutar_ventana_registrar_producto
 
 from src.controllers.registrar_producto import RegistarProducto
+from src.models.buscador_bd import Buscar_producto
+
 class Widget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -16,16 +18,12 @@ class Widget(QWidget):
         ejecutar_ventana_registrar_producto(self)
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    widget = RegistarProducto()
-    widget.show()
-    sys.exit(app.exec_())
-    """
-    Punto de entrada principal de la aplicación.
+
     
     app = QApplication(sys.argv)  # Crea una instancia de la aplicación.
     app.setStyle("Fusion")  # Cambia el estilo de la aplicación
     widget = Widget() # Crea una instancia de la clase Widget (ventana principal).
     widget.show()  # Muestra la ventana principal.
-    sys.exit(app.exec())  # Inicia el bucle de eventos y espera a que la aplicación se cierre.
-    """
+    sys.exit(app.exec())  # Inicia el bucle de eventos y espera a que la aplicación se cierre. 
+
+

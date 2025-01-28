@@ -92,16 +92,9 @@ QPushButton{
    <property name="editable">
     <bool>true</bool>
    </property>
-   <item>
-    <property name="text">
-     <string>Carnicos</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Bebidas</string>
-    </property>
-   </item>
+   <property name="placeholderText">
+    <string extracomment="Hola">Valor</string>
+   </property>
   </widget>
   <widget class="QComboBox" name="comboBox_2">
    <property name="geometry">
@@ -115,16 +108,9 @@ QPushButton{
    <property name="editable">
     <bool>true</bool>
    </property>
-   <item>
-    <property name="text">
-     <string>Fernandez</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Saleciana</string>
-    </property>
-   </item>
+   <property name="placeholderText">
+    <string extracomment="HOla">Valor</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">

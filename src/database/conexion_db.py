@@ -4,10 +4,10 @@ class Conexion:
         try:
             conexion = mysql.connector.connect(
                 host = "localhost",
-                user = "user_sistema",
-                password = "12345",
+                user = "root",
+                password = "GaboMac",
                 database = database,
-                port = "3307",
+                port = "3306",
                 charset = 'utf8mb4',
                 collation = 'utf8mb4_unicode_ci')
             return conexion
